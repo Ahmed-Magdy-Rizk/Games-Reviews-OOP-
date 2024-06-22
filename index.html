@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------------------------------------- Google Fonts ----------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+        rel="stylesheet">
+    <!----------------------------------------- Font Awesome ----------------------------------------->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!----------------------------------------- Bootstrap ----------------------------------------->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!----------------------------------------- Main Style ----------------------------------------->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Game OOP</title>
+</head>
+
+<body>
+    <!----------------------------------------- Games Section ----------------------------------------->
+    <section class="d-block" id="games">
+        <!----------------------------------------- header Section ----------------------------------------->
+        <header></header>
+        <!----------------------------------------- Nav Bar Section ----------------------------------------->
+        <nav class="navbar navbar-expand-lg nav-bg position-sticky top-0 z-3 col-md-6 col-lg-9">
+            <div class="container">
+                <h5 class="navbar-brand mb-0 text-uppercase">
+                    <img src="images/logo-sm.png" alt="logo photo" style="max-width: 40px"> Game Reviews
+                </h5>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse small navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu small">
+                        <li class="nav-item">
+                            <a role="button" class="nav-link active text-uppercase" aria-current="mmorpg"
+                                data-category="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="sailing">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="permadeath">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="superhero">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="pixel">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!----------------------------------------- main Section ----------------------------------------->
+        <main>
+            <div class="container">
+                <div class="d-none justify-content-center align-items-center h1 my-loader">
+                    <span class="loader"></span>
+                </div>
+                <div class="row g-4" id="games-data">
+                    <!-- <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card text-center rounded-3 p-3">
+                            <div class="card-image">
+                                <img src="images/thumbnail (1).jpg" alt="" class="w-100 rounded-3">
+                            </div>
+                            <div class="card-name mt-3 d-flex justify-content-between">
+                                <h3 class="h6 small text-white">Overwatch 2</h3>
+                                <span class="badge text-bg-primary p-2">Free</span>
+                            </div>
+                            <div class="card-info">A,hero-focused,first-person,team,shooter,from,Blizzard,Entertainment.
+                            </div>
+                            <footer class="card-footer small hstack justify-content-between">
+                                <span class="badge badge-color">Shooter</span>
+                                <span class="badge badge-color">PC (Windows)</span>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card text-center rounded-3 p-3">
+                            <div class="card-image">
+                                <img src="images/thumbnail (1).jpg" alt="" class="w-100 rounded-3">
+                            </div>
+                            <div class="card-name mt-3 d-flex justify-content-between">
+                                <h3 class="h6 small text-white">Overwatch 2</h3>
+                                <span class="badge text-bg-primary p-2">Free</span>
+                            </div>
+                            <div class="card-info">A,hero-focused,first-person,team,shooter,from,Blizzard,Entertainment.
+                            </div>
+                            <footer class="card-footer small hstack justify-content-between">
+                                <span class="badge badge-color">Shooter</span>
+                                <span class="badge badge-color">PC (Windows)</span>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card text-center rounded-3 p-3">
+                            <div class="card-image">
+                                <img src="images/thumbnail (1).jpg" alt="" class="w-100 rounded-3">
+                            </div>
+                            <div class="card-name mt-3 d-flex justify-content-between">
+                                <h3 class="h6 small text-white">Overwatch 2</h3>
+                                <span class="badge text-bg-primary p-2">Free</span>
+                            </div>
+                            <div class="card-info">A,hero-focused,first-person,team,shooter,from,Blizzard,Entertainment.
+                            </div>
+                            <footer class="card-footer small hstack justify-content-between">
+                                <span class="badge badge-color">Shooter</span>
+                                <span class="badge badge-color">PC (Windows)</span>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card text-center rounded-3 p-3">
+                            <div class="card-image">
+                                <img src="images/thumbnail (1).jpg" alt="" class="w-100 rounded-3">
+                            </div>
+                            <div class="card-name mt-3 d-flex justify-content-between">
+                                <h3 class="h6 small text-white">Overwatch 2</h3>
+                                <span class="badge text-bg-primary p-2">Free</span>
+                            </div>
+                            <div class="card-info">A,hero-focused,first-person,team,shooter,from,Blizzard,Entertainment.
+                            </div>
+                            <footer class="card-footer small hstack justify-content-between">
+                                <span class="badge badge-color">Shooter</span>
+                                <span class="badge badge-color">PC (Windows)</span>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card text-center rounded-3 p-3">
+                            <div class="card-image">
+                                <img src="images/thumbnail (1).jpg" alt="" class="w-100 rounded-3">
+                            </div>
+                            <div class="card-name mt-3 d-flex justify-content-between">
+                                <h3 class="h6 small text-white">Overwatch 2</h3>
+                                <span class="badge text-bg-primary p-2">Free</span>
+                            </div>
+                            <div class="card-info">A,hero-focused,first-person,team,shooter,from,Blizzard,Entertainment.
+                            </div>
+                            <footer class="card-footer small hstack justify-content-between">
+                                <span class="badge badge-color">Shooter</span>
+                                <span class="badge badge-color">PC (Windows)</span>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card text-center rounded-3 p-3">
+                            <div class="card-image">
+                                <img src="images/thumbnail (1).jpg" alt="" class="w-100 rounded-3">
+                            </div>
+                            <div class="card-name mt-3 d-flex justify-content-between">
+                                <h3 class="h6 small text-white">Overwatch 2</h3>
+                                <span class="badge text-bg-primary p-2">Free</span>
+                            </div>
+                            <div class="card-info">A,hero-focused,first-person,team,shooter,from,Blizzard,Entertainment.
+                            </div>
+                            <footer class="card-footer small hstack justify-content-between">
+                                <span class="badge badge-color">Shooter</span>
+                                <span class="badge badge-color">PC (Windows)</span>
+                            </footer>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!----------------------------------------- Details Section ----------------------------------------->
+    <div class="d-none justify-content-center align-items-center h1 my-loader2">
+        <span class="loader"></span>
+    </div>
+    <section class="d-none" id="details">
+        <div class="container">
+            <details-header class="hstack justify-content-between">
+                <h1 class="text-center h3 py-4">Details Game</h1>
+                <button class="btn-close btn-close-white" id="close-sign"></button>
+            </details-header>
+            <div class="row g-4" id="gameDetailsContent">
+                <!-- <div class="col-md-4">
+                    <img src="https://www.freetogame.com/g/517/thumbnail.jpg" class="w-100" alt="image details">
+                </div>
+                <div class="col-md-8">
+                    <h3>Title: Lost Ark</h3>
+                    <p>Category: <span class="badge text-bg-info"> ARPG</span> </p>
+                    <p>Platform: <span class="badge text-bg-info"> Windows</span> </p>
+                    <p>Status: <span class="badge text-bg-info"> Live</span> </p>
+                    <p class="small">Smilegate’s free-to-play multiplayer ARPG is a massive adventure filled with lands
+                        waiting to be explored, people waiting to be met, and an ancient evil waiting to be destroyed.
+                        In Lost Ark, players enter the world of Arkesia and embark on a journey across several lands in
+                        a quest to locate the Ark of Legends. Stop the demon Kazeros and his army before they seize
+                        control. And hurry, the demons are searching for the Ark too.
+
+                        Choose to play as one of several classes ranging from the sword-wielding warrior to a mage or
+                        even the gunner – each with several advanced class options. Play alone or with friends (or
+                        acquaintances) to explore seven vast continents filled with strange cultures and creatures.
+                        Fight in PvP, explore dungeons, and work together in raids. Decide what you like to do best and
+                        go for it – but don’t forget to save the world.
+
+                        Lost Ark offers an easy-to-learn system with plenty of room to customize. Use the game’s
+                        ‘Tripod’ system to unlock up to three tiers of customization for each ability and create the
+                        combat style that works best for you.
+
+                        As for other features, Lost Ark offers crafting, guilds, and other systems players expect from
+                        online games. Whatever you want to do, it’s up to you.
+                    </p>
+                    <a class="btn btn-outline-warning" target="_blank" href="https://www.freetogame.com/open/lost-ark">Show Game</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <script src="js/index.js" type="module"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+/* ----------------------------------------- Global ----------------------------------------- */
+body {
+    font-family: "Comfortaa", cursive;
+    color: #eee;
+    background-color: #272B30;
+}
+
+header {
+    width: 100%;
+    background-image: url(../images/wraper.png);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+}
+/* ----------------------------------------- Nav Bar Section ----------------------------------------- */
+nav {
+    background-color: #3a497b !important;
+    margin-inline: auto;
+    margin-top: -30px;
+    margin-bottom: 50px;
+    /* transform: translateY(-50%); */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+
+nav a {
+    color: #eee !important;
+}
+
+.nav-item .nav-link.active, .nav-item .nav-link:hover {
+    color: #09c !important;
+    transition: color 0.5s;
+}
+
+/* ----------------------------------------- Cards Section ----------------------------------------- */
+
+.card {
+    background-color: #272B30;
+    transition: 0.5s all;
+    padding-bottom: 0px !important;
+    height: max-content;
+}
+
+.card:hover {
+    transform: scale(105%);
+}
+
+.card:hover .card-image{
+    opacity: 1;
+}
+
+.card-image {
+    opacity: 0.5;
+    transition: 0.5s all;
+}
+
+.card-name {
+    opacity: 0.5;
+    transition: 0.5s all;
+}
+
+.card:hover .card-name{
+    opacity: 1;
+}
+
+.card-info {
+    padding-top: 12px;
+    color: #8D9092;
+    min-height: 80px;
+}
+
+.footer-card {
+    border-top: 1px solid #212529;
+    background-color: #272B2F;
+}
+
+.badge-color {
+    background-color: #32383E;
+}
+
+/* Loader section */
+.loader {
+    transform: rotateZ(45deg);
+    perspective: 1000px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    color: #fff;
+  }
+    .loader:before,
+    .loader:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+      transform: rotateX(70deg);
+      animation: 1s spin linear infinite;
+    }
+    .loader:after {
+      color: #FF3D00;
+      transform: rotateY(70deg);
+      animation-delay: .4s;
+    }
+
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+  }
+
+  @keyframes rotateccw {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(-360deg);
+    }
+  }
+
+  @keyframes spin {
+    0%,
+    100% {
+      box-shadow: .2em 0px 0 0px currentcolor;
+    }
+    12% {
+      box-shadow: .2em .2em 0 0 currentcolor;
+    }
+    25% {
+      box-shadow: 0 .2em 0 0px currentcolor;
+    }
+    37% {
+      box-shadow: -.2em .2em 0 0 currentcolor;
+    }
+    50% {
+      box-shadow: -.2em 0 0 0 currentcolor;
+    }
+    62% {
+      box-shadow: -.2em -.2em 0 0 currentcolor;
+    }
+    75% {
+      box-shadow: 0px -.2em 0 0 currentcolor;
+    }
+    87% {
+      box-shadow: .2em -.2em 0 0 currentcolor;
+    }
+  }
+
+
+.my-loader2 {
+    margin-top: 300px;
+}
